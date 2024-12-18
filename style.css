@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
     display: flex;
@@ -11,7 +12,7 @@ body{
 
 .left-container{
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100vh;
     width: 36%;
     padding: 10px;
@@ -35,9 +36,10 @@ body{
 #describ{
     color:#e4dbdbac;
     position: absolute;
-    bottom:90px;
+    bottom:120px;
     left: 4vw;
     width:20vw;
+    font-size: 12px;
 }
 
 .left-container img{
@@ -45,7 +47,58 @@ body{
     height: 97vh;
 }
 .right-container {
-    border: 1px solid rgb(221, 231, 24);
+    /* border: 1px solid rgb(221, 231, 24); */
     height: 100vh;
     width: 64%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    height: 80vh;
+    width: 40vw;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-container form{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.form-container form p{
+    font-size: 12px;
+    color: grey;
+}
+.form-container input{
+    border-radius: 5px;
+    padding-left: 20px;
+    width: 29vw;
+    height: 6vh;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #e4dbdbac;
+}
+button{
+    border-radius: 5px;
+    margin-top: 20px;   
+    width: 29vw;
+    height: 6vh;
+    color: white;
+    background-color: #EB5017;
+    border-color: #CD3700;
+}
+form+p{
+    font-size: 14px;
+}
+#login{
+    color: #EB5017;
+    text-decoration: none;
+}
+.form-container h2{
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
